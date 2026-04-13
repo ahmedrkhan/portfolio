@@ -170,7 +170,7 @@ nav a:hover {
         width: 100%;
         text-align: center;
         padding: 15px;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
 
@@ -537,10 +537,7 @@ section {
     min-height: 200px;
 }
 
-.project-card,
-a {
-    padding: 20px;
-}
+
 
 /* =========================
         CONTACT SECTION
@@ -704,20 +701,10 @@ footer {
         padding: 60px 25px;
     }
 
-    .project-card,
-    a {
-        text-decoration: none;
-        max-height: 150px;
-        overflow-y: auto;
-    }
-
 
     .project-card {
         text-decoration: none;
-        min-height: 140px;
-        max-height: 150px;
-        overflow-y: auto;
-        margin: 4px;
+        max-height: 120px;
     }
 
 
