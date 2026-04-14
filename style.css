@@ -137,6 +137,18 @@ nav a:hover {
     cursor: pointer;
 }
 
+.resume-btn {
+    background: red;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.resume-btn:hover {
+    background: darkred;
+}
+
 /* Mobile Navbar */
 @media (max-width: 768px) {
     .menu-toggle {
