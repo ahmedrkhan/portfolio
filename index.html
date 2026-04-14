@@ -22,10 +22,7 @@
             <a href="#about">About</a>
             <a href="#projects">Project</a>
             <a href="#contact">Contact</a>
-            <a href="https://drive.google.com/uc?export=download&id=1G-j0hFwZHAGQ-uVEAaoJp2FcoPUokczu"
-                class="resume-btn">
-                Download Resume
-            </a>
+            <a class="resume-btn" href="./Ahmed Raza Khan Resume.pdf" download>Download Resume</a>
         </nav>
     </header>
     <!-- HOME SECTION -->
@@ -226,8 +223,8 @@
         const toggle = document.querySelector(".menu-toggle");
         const nav = document.querySelector("nav");
 
-        // smooth scroll + close menu
-        document.querySelectorAll('nav a').forEach(link => {
+        // ✅ ONLY smooth scroll for section links
+        document.querySelectorAll('nav a[href^="#"]').forEach(link => {
             link.addEventListener('click', function (e) {
                 e.preventDefault();
 
@@ -246,13 +243,13 @@
             });
         });
 
-        // toggle menu
+        // ✅ toggle menu
         toggle.addEventListener("click", () => {
             nav.classList.toggle("active");
             toggle.classList.toggle("active");
         });
 
-        // close on outside click
+        // ✅ close on outside click
         document.addEventListener("click", (e) => {
             if (!nav.contains(e.target) && !toggle.contains(e.target)) {
                 nav.classList.remove("active");

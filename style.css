@@ -207,6 +207,7 @@ nav a:hover {
     border: 3px solid #555;
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
     transition: all 0.4s ease;
+    background: #f5f6f7
 }
 
 .hero img:hover {
